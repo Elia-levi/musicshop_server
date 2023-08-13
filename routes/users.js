@@ -187,7 +187,7 @@ router.post("/login", async (req, res) => {
 })
 
 // Delete users
-router.delete("/:idDelete", authAdmin, async (req, res) => {
+router.deleteOne("/:idDelete", authAdmin, async (req, res) => {
   try {
     let idDelete = req.params.idDelete
 
